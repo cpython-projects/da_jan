@@ -1,4 +1,5 @@
 import os
+import my_exceptions
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -17,6 +18,20 @@ config_write = {
     'password': os.getenv('DB_PASSWORD_W'),
     'database': os.getenv('DB_NAME_W'),
 }
+
+def connect(*args, **kwargs):
+    ...
+
+
+def search_by_actor(conn, name):
+    ...
+
+
+def search_by_year(conn, year):
+    ...
+
+def close_connection(conn):
+    ...
 
 
 
